@@ -14,3 +14,6 @@ frontend/dist/
 # OS / 에디터
 .DS_Store
 .vscode/
+
+# 개인 메모 / 튜터 지침 (제출 저장소에서 제외)
+CLAUDE.md
