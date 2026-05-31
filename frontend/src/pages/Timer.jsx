@@ -120,7 +120,15 @@ function Timer() {
   }
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div
+      style={{
+        padding: "20px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+      }}
+    >
       <h1>{mode === "focus" ? "🍅 집중" : "☕ 휴식"}</h1>
 
       {/* 타이머 표시 */}
