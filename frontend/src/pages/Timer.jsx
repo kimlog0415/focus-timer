@@ -122,7 +122,6 @@ function Timer() {
   return (
     <div
       style={{
-        padding: "20px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -150,7 +149,7 @@ function Timer() {
           style={{
             width: `${progress}%`,
             height: "100%",
-            background: mode === "focus" ? "#4caf50" : "#2196f3",
+            background: mode === "focus" ? "#ff6347" : "#2196f3",
             transition: "width 1s linear",
           }}
         />
@@ -191,7 +190,12 @@ function Timer() {
           {subjects.map((s) => (
             <li key={s.id}>
               {s.name}{" "}
-              <button onClick={() => handleDeleteSubject(s.id)}>삭제</button>
+              <button
+                className="btn-nondeco"
+                onClick={() => handleDeleteSubject(s.id)}
+              >
+                ❌
+              </button>
             </li>
           ))}
         </ul>

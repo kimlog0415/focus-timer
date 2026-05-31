@@ -39,7 +39,7 @@ function History() {
   }
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div>
       <h1>History</h1>
 
       {/* 필터 */}
@@ -69,7 +69,7 @@ function History() {
       {sessions.length === 0 ? (
         <p>세션이 없습니다.</p>
       ) : (
-        <table border="1" cellPadding="8" style={{ borderCollapse: "collapse" }}>
+        <table>
           <thead>
             <tr>
               <th>과목</th>
